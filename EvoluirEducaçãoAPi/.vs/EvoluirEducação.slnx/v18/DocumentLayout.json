@@ -1,0 +1,289 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEduca\u00E7\u00E3o\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2DA4E9C4-8571-4E42-84D6-BB3897CCB34F}|EvoluirEduca\u00E7\u00E3o.csproj|c:\\users\\41932003886\\desktop\\back-end-s3\\evoluireduca\u00E7\u00E3o\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2DA4E9C4-8571-4E42-84D6-BB3897CCB34F}|EvoluirEduca\u00E7\u00E3o.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DA4E9C4-8571-4E42-84D6-BB3897CCB34F}|EvoluirEduca\u00E7\u00E3o.csproj|c:\\users\\41932003886\\desktop\\back-end-s3\\evoluireduca\u00E7\u00E3o\\controllers\\cursocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DA4E9C4-8571-4E42-84D6-BB3897CCB34F}|EvoluirEduca\u00E7\u00E3o.csproj|solutionrelative:controllers\\cursocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DA4E9C4-8571-4E42-84D6-BB3897CCB34F}|EvoluirEduca\u00E7\u00E3o.csproj|c:\\users\\41932003886\\desktop\\back-end-s3\\evoluireduca\u00E7\u00E3o\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DA4E9C4-8571-4E42-84D6-BB3897CCB34F}|EvoluirEduca\u00E7\u00E3o.csproj|solutionrelative:controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DA4E9C4-8571-4E42-84D6-BB3897CCB34F}|EvoluirEduca\u00E7\u00E3o.csproj|c:\\users\\41932003886\\desktop\\back-end-s3\\evoluireduca\u00E7\u00E3o\\controllers\\turmacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DA4E9C4-8571-4E42-84D6-BB3897CCB34F}|EvoluirEduca\u00E7\u00E3o.csproj|solutionrelative:controllers\\turmacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DA4E9C4-8571-4E42-84D6-BB3897CCB34F}|EvoluirEduca\u00E7\u00E3o.csproj|c:\\users\\41932003886\\desktop\\back-end-s3\\evoluireduca\u00E7\u00E3o\\dto\\alunodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DA4E9C4-8571-4E42-84D6-BB3897CCB34F}|EvoluirEduca\u00E7\u00E3o.csproj|solutionrelative:dto\\alunodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DA4E9C4-8571-4E42-84D6-BB3897CCB34F}|EvoluirEduca\u00E7\u00E3o.csproj|c:\\users\\41932003886\\desktop\\back-end-s3\\evoluireduca\u00E7\u00E3o\\repositories\\alunorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DA4E9C4-8571-4E42-84D6-BB3897CCB34F}|EvoluirEduca\u00E7\u00E3o.csproj|solutionrelative:repositories\\alunorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DA4E9C4-8571-4E42-84D6-BB3897CCB34F}|EvoluirEduca\u00E7\u00E3o.csproj|c:\\users\\41932003886\\desktop\\back-end-s3\\evoluireduca\u00E7\u00E3o\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DA4E9C4-8571-4E42-84D6-BB3897CCB34F}|EvoluirEduca\u00E7\u00E3o.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DA4E9C4-8571-4E42-84D6-BB3897CCB34F}|EvoluirEduca\u00E7\u00E3o.csproj|c:\\users\\41932003886\\desktop\\back-end-s3\\evoluireduca\u00E7\u00E3o\\dto\\turmadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DA4E9C4-8571-4E42-84D6-BB3897CCB34F}|EvoluirEduca\u00E7\u00E3o.csproj|solutionrelative:dto\\turmadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DA4E9C4-8571-4E42-84D6-BB3897CCB34F}|EvoluirEduca\u00E7\u00E3o.csproj|c:\\users\\41932003886\\desktop\\back-end-s3\\evoluireduca\u00E7\u00E3o\\dto\\cursodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DA4E9C4-8571-4E42-84D6-BB3897CCB34F}|EvoluirEduca\u00E7\u00E3o.csproj|solutionrelative:dto\\cursodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DA4E9C4-8571-4E42-84D6-BB3897CCB34F}|EvoluirEduca\u00E7\u00E3o.csproj|c:\\users\\41932003886\\desktop\\back-end-s3\\evoluireduca\u00E7\u00E3o\\repositories\\turmarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DA4E9C4-8571-4E42-84D6-BB3897CCB34F}|EvoluirEduca\u00E7\u00E3o.csproj|solutionrelative:repositories\\turmarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DA4E9C4-8571-4E42-84D6-BB3897CCB34F}|EvoluirEduca\u00E7\u00E3o.csproj|c:\\users\\41932003886\\desktop\\back-end-s3\\evoluireduca\u00E7\u00E3o\\interfaces\\iturmarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DA4E9C4-8571-4E42-84D6-BB3897CCB34F}|EvoluirEduca\u00E7\u00E3o.csproj|solutionrelative:interfaces\\iturmarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DA4E9C4-8571-4E42-84D6-BB3897CCB34F}|EvoluirEduca\u00E7\u00E3o.csproj|c:\\users\\41932003886\\desktop\\back-end-s3\\evoluireduca\u00E7\u00E3o\\repositories\\cursorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DA4E9C4-8571-4E42-84D6-BB3897CCB34F}|EvoluirEduca\u00E7\u00E3o.csproj|solutionrelative:repositories\\cursorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DA4E9C4-8571-4E42-84D6-BB3897CCB34F}|EvoluirEduca\u00E7\u00E3o.csproj|c:\\users\\41932003886\\desktop\\back-end-s3\\evoluireduca\u00E7\u00E3o\\interfaces\\ialunorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DA4E9C4-8571-4E42-84D6-BB3897CCB34F}|EvoluirEduca\u00E7\u00E3o.csproj|solutionrelative:interfaces\\ialunorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DA4E9C4-8571-4E42-84D6-BB3897CCB34F}|EvoluirEduca\u00E7\u00E3o.csproj|c:\\users\\41932003886\\desktop\\back-end-s3\\evoluireduca\u00E7\u00E3o\\interfaces\\icursorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DA4E9C4-8571-4E42-84D6-BB3897CCB34F}|EvoluirEduca\u00E7\u00E3o.csproj|solutionrelative:interfaces\\icursorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DA4E9C4-8571-4E42-84D6-BB3897CCB34F}|EvoluirEduca\u00E7\u00E3o.csproj|c:\\users\\41932003886\\desktop\\back-end-s3\\evoluireduca\u00E7\u00E3o\\evoluireduca\u00E7\u00E3o.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2DA4E9C4-8571-4E42-84D6-BB3897CCB34F}|EvoluirEduca\u00E7\u00E3o.csproj|solutionrelative:evoluireduca\u00E7\u00E3o.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEduca\u00E7\u00E3o\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEduca\u00E7\u00E3o\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-26T19:51:00.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TurmaController.cs",
+              "DocumentMoniker": "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEduca\u00E7\u00E3o\\Controllers\\TurmaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TurmaController.cs",
+              "ToolTip": "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEduca\u00E7\u00E3o\\Controllers\\TurmaController.cs",
+              "RelativeToolTip": "Controllers\\TurmaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T18:31:02.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CursoController.cs",
+              "DocumentMoniker": "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEduca\u00E7\u00E3o\\Controllers\\CursoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CursoController.cs",
+              "ToolTip": "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEduca\u00E7\u00E3o\\Controllers\\CursoController.cs",
+              "RelativeToolTip": "Controllers\\CursoController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAUwA0AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T18:30:17.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AlunoController.cs",
+              "DocumentMoniker": "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEduca\u00E7\u00E3o\\Controllers\\AlunoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AlunoController.cs",
+              "ToolTip": "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEduca\u00E7\u00E3o\\Controllers\\AlunoController.cs",
+              "RelativeToolTip": "Controllers\\AlunoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T18:29:56.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AlunoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEduca\u00E7\u00E3o\\Repositories\\AlunoRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\AlunoRepository.cs",
+              "ToolTip": "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEduca\u00E7\u00E3o\\Repositories\\AlunoRepository.cs",
+              "RelativeToolTip": "Repositories\\AlunoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T18:28:33.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CursoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEduca\u00E7\u00E3o\\Repositories\\CursoRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\CursoRepository.cs",
+              "ToolTip": "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEduca\u00E7\u00E3o\\Repositories\\CursoRepository.cs",
+              "RelativeToolTip": "Repositories\\CursoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T18:28:10.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TurmaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEduca\u00E7\u00E3o\\Repositories\\TurmaRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\TurmaRepository.cs",
+              "ToolTip": "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEduca\u00E7\u00E3o\\Repositories\\TurmaRepository.cs",
+              "RelativeToolTip": "Repositories\\TurmaRepository.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAuwCMAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T18:27:48.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ICursoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEduca\u00E7\u00E3o\\Interfaces\\ICursoRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\ICursoRepository.cs",
+              "ToolTip": "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEduca\u00E7\u00E3o\\Interfaces\\ICursoRepository.cs",
+              "RelativeToolTip": "Interfaces\\ICursoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T18:27:26.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ITurmaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEduca\u00E7\u00E3o\\Interfaces\\ITurmaRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\ITurmaRepository.cs",
+              "ToolTip": "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEduca\u00E7\u00E3o\\Interfaces\\ITurmaRepository.cs",
+              "RelativeToolTip": "Interfaces\\ITurmaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T18:27:05.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IAlunoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEduca\u00E7\u00E3o\\Interfaces\\IAlunoRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IAlunoRepository.cs",
+              "ToolTip": "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEduca\u00E7\u00E3o\\Interfaces\\IAlunoRepository.cs",
+              "RelativeToolTip": "Interfaces\\IAlunoRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA1wAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T18:26:42.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TurmaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEduca\u00E7\u00E3o\\DTO\\TurmaDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\TurmaDTO.cs",
+              "ToolTip": "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEduca\u00E7\u00E3o\\DTO\\TurmaDTO.cs",
+              "RelativeToolTip": "DTO\\TurmaDTO.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T18:26:19.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CursoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEduca\u00E7\u00E3o\\DTO\\CursoDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\CursoDTO.cs",
+              "ToolTip": "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEduca\u00E7\u00E3o\\DTO\\CursoDTO.cs",
+              "RelativeToolTip": "DTO\\CursoDTO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T18:25:58.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AlunoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEduca\u00E7\u00E3o\\DTO\\AlunoDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\AlunoDTO.cs",
+              "ToolTip": "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEduca\u00E7\u00E3o\\DTO\\AlunoDTO.cs",
+              "RelativeToolTip": "DTO\\AlunoDTO.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAiwA4AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T18:25:44.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EvoluirEduca\u00E7\u00E3o",
+              "DocumentMoniker": "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEduca\u00E7\u00E3o\\EvoluirEduca\u00E7\u00E3o.csproj",
+              "RelativeDocumentMoniker": "EvoluirEduca\u00E7\u00E3o.csproj",
+              "ToolTip": "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEduca\u00E7\u00E3o\\EvoluirEduca\u00E7\u00E3o.csproj",
+              "RelativeToolTip": "EvoluirEduca\u00E7\u00E3o.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-26T17:55:34.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEduca\u00E7\u00E3o\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEduca\u00E7\u00E3o\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T17:46:44.316Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1264,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+C:\Users\41932003886\Desktop\Back-end-S3\EvoluirEducação\obj\Debug\net10.0\EvoluirEducação.csproj.AssemblyReference.cache
+C:\Users\41932003886\Desktop\Back-end-S3\EvoluirEducação\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\41932003886\Desktop\Back-end-S3\EvoluirEducação\obj\Debug\net10.0\EvoluirEducação.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\41932003886\Desktop\Back-end-S3\EvoluirEducação\obj\Debug\net10.0\EvoluirEducação.AssemblyInfoInputs.cache
+C:\Users\41932003886\Desktop\Back-end-S3\EvoluirEducação\obj\Debug\net10.0\EvoluirEducação.AssemblyInfo.cs
+C:\Users\41932003886\Desktop\Back-end-S3\EvoluirEducação\obj\Debug\net10.0\EvoluirEducação.csproj.CoreCompileInputs.cache
+C:\Users\41932003886\Desktop\Back-end-S3\EvoluirEducação\obj\Debug\net10.0\EvoluirEducação.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\41932003886\Desktop\Back-end-S3\EvoluirEducação\obj\Debug\net10.0\EvoluirEducação.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\41932003886\Desktop\Back-end-S3\EvoluirEducação\obj\Debug\net10.0\EvoluirEducação.sourcelink.json
