@@ -14,6 +14,11 @@ namespace EvoluirEducação.Repositories
         {
             _context = context;
         }
+        /// <summary>
+        /// Cadastra um novo curso no banco de dados.
+        /// </summary>
+        /// <param name="curso">Objeto a ser cadastrado.</param>
+
         public void Atualizar(Guid id, Curso curso)
         {
             var CursoBuscado = _context.Cursos.Find(id);
@@ -30,17 +35,30 @@ namespace EvoluirEducação.Repositories
             }
         }
 
+        /// <summary>
+        /// Busca um curso pelo seu ID.
+        /// </summary>
+        /// <param name="id">ID do curso a ser buscado.</param>
+        /// <returns>Objeto encontrado ou null se não existir.</returns>
         public Curso BuscarPorId(Guid id)
         {
             return _context.Cursos.Find(id)!;
         }
 
+        /// <summary>
+        /// Cadastra um novo curso no banco de dados.
+        /// </summary>
+        /// <param name="curso">Objeto a ser cadastrado.</param>
         public void Cadastrar(Curso curso)
         {
             _context.Cursos.Add(curso);
             _context.SaveChanges();
         }
 
+        /// <summary>
+        /// Deleta um curso existente.
+        /// </summary>
+        /// <param name="idCurso">Objeto a ser deletado.</param>
         public void Deletar(Curso idCurso)
         {
 
@@ -49,6 +67,10 @@ namespace EvoluirEducação.Repositories
 
         }
 
+        /// <summary>
+        /// Lista todos os cursos cadastrados, ordenados pelo nome.
+        /// </summary>
+        /// <returns>Lista de objetos.</returns>
         public List<Curso> Listar()
         {
             return _context.Cursos.OrderBy(con => con.Nome).ToList();

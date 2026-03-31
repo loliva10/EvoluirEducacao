@@ -18,6 +18,13 @@ namespace EvoluirEducação.Controllers
             _turmaRepository = turmaRepository;
         }
 
+        /// <summary>
+        /// Lista todas as turmas cadastradas.
+        /// </summary>
+        /// <returns>
+        /// Retorna 200 com a lista de turmas.
+        /// Em caso de erro, retorna 400.
+        /// </returns>
         [HttpGet]
         public IActionResult Listar()
         {
@@ -31,6 +38,14 @@ namespace EvoluirEducação.Controllers
                 return BadRequest(erro.Message);
             }
         }
+        /// <summary>
+        /// Busca uma turma pelo ID.
+        /// </summary>
+        /// <param name="id">Identificador único da turma.</param>
+        /// <returns>
+        /// Retorna 200 com a turma encontrada.
+        /// Em caso de erro, retorna 400.
+        /// </returns>
 
         [HttpGet("{id}")]
         public IActionResult BuscarPorId(Guid id)
@@ -44,6 +59,14 @@ namespace EvoluirEducação.Controllers
                 return BadRequest(erro.Message);
             }
         }
+
+        /// <summary>
+        /// Cadastra uma nova turma.
+        /// </summary>
+        /// <param name="turma">Objeto contendo os dados da turma.</param>
+        /// <returns>
+        /// Retorna 201 com a turma criada. Em caso de erro, retorna 400.
+        /// </returns>
 
         [HttpPost]
         public IActionResult Cadastrar(TurmaDTO turma)
@@ -65,6 +88,14 @@ namespace EvoluirEducação.Controllers
                 return BadRequest(erro.Message);
             }
         }
+        /// <summary>
+        /// Atualiza os dados de uma turma existente.
+        /// </summary>
+        /// <param name="id">Identificador da turma.</param>
+        /// <param name="turma">Objeto com os novos dados da turma.</param>
+        /// <returns>
+        /// Retorna 204indicando sucesso na atualização. Em caso de erro, retorna 400.
+        /// </returns>
 
         [HttpPut("{id}")]
         public IActionResult Atualizar(Guid id, TurmaDTO turma)
@@ -85,6 +116,16 @@ namespace EvoluirEducação.Controllers
                 return BadRequest(erro.Message);
             }
         }
+
+        /// <summary>
+        /// Remove uma turma pelo ID.
+        /// </summary>
+        /// <param name="id">Identificador único da turma.</param>
+        /// <returns>
+        /// Retorna 204 se removida com sucesso.
+        /// Em caso de erro, retorna 400.
+        /// </returns>
+
         [HttpDelete("{id}")]
         public IActionResult Deletar(Guid id)
         {

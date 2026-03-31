@@ -13,6 +13,13 @@ namespace EvoluirEducação.Repositories
         {
             _context = context;
         }
+
+        /// <summary>
+        /// Atualiza os dados de um aluno existente no banco.
+        /// Campos nulos ou vazios não sobrescrevem os valores existentes.
+        /// </summary>
+        /// <param name="id">ID do aluno a ser atualizado.</param>
+        /// <param name="aluno">Objeto <see cref="Aluno"/> contendo os novos dados.</param>
         public void Atualizar(Guid id, Aluno aluno)
         {
             var alunoBuscado = _context.Alunos.Find(id);
@@ -31,16 +38,31 @@ namespace EvoluirEducação.Repositories
             }
         }
 
+        /// <summary>
+        /// Busca um aluno pelo seu ID.
+        /// </summary>
+        /// <param name="id">ID do aluno a ser buscado.</param>
+        /// <returns>O <see cref="Aluno"/> correspondente ao ID informado.</returns>
+
         public Aluno BuscarPorId(Guid id)
         {
             return _context.Alunos.Find(id)!;
         }
 
+        /// <summary>
+        /// Cadastra um novo aluno no banco de dados.
+        /// </summary>
+        /// <param name="aluno">Objeto <see cref="Aluno"/> a ser adicionado.</param>
         public void Cadastrar(Aluno aluno)
         {
             _context.Alunos.Add(aluno);
             _context.SaveChanges();
         }
+
+        /// <summary>
+        /// Remove um aluno do banco de dados.
+        /// </summary>
+        /// <param name="aluno">Objeto <see cref="Aluno"/> a ser removido.</param>
 
         public void Deletar(Aluno aluno)
         {
@@ -51,7 +73,10 @@ namespace EvoluirEducação.Repositories
            // }
             _context.SaveChanges();
         }
-
+        /// <summary>
+        /// Retorna todos os alunos cadastrados, ordenados pelo nome.
+        /// </summary>
+        /// <returns>Lista de <see cref="Aluno"/> ordenada pelo nome.</returns>
         public List<Aluno> Listar()
         {
             return _context.Alunos.OrderBy(con => con.Nome).ToList();

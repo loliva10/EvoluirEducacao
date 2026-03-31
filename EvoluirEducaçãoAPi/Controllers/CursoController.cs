@@ -18,6 +18,13 @@ public class CursoController : ControllerBase
         _cursoRepository = cursoRepository;
     }
 
+    /// <summary>
+    /// Lista todos os cursos cadastrados.
+    /// </summary>
+    /// <returns>
+    /// Retorna 200 com a lista de cursos. Em caso de erro, retorna 400 .
+    /// </returns>
+
     [HttpGet]
     public IActionResult Listar()
     {
@@ -32,6 +39,14 @@ public class CursoController : ControllerBase
         }
     }
 
+    /// <summary>
+    /// Busca um curso pelo ID.
+    /// </summary>
+    /// <param name="id">Identificador único do curso.</param>
+    /// <returns>
+    /// Retorna 200 com o curso encontrado.
+    /// Em caso de erro, retorna 400.
+    /// </returns>
     [HttpGet("{id}")]
     public IActionResult BuscarPorId(Guid id)
     {
@@ -45,6 +60,13 @@ public class CursoController : ControllerBase
         }
     }
 
+    /// <summary>
+    /// Cadastra um novo curso.
+    /// </summary>
+    /// <param name="curso">Objeto contendo os dados do curso.</param>
+    /// <returns>
+    /// Retorna 201 com o curso criado. Em caso de erro, retorna 400 .
+    /// </returns>
     [HttpPost]
     public IActionResult Cadastrar(CursoDTO curso)
     {
@@ -65,6 +87,16 @@ public class CursoController : ControllerBase
             return BadRequest(erro.Message);
         }
     }
+
+    /// <summary>
+    /// Atualiza os dados de um curso existente.
+    /// </summary>
+    /// <param name="id">Identificador do curso.</param>
+    /// <param name="curso">Objeto com os novos dados do curso.</param>
+    /// <returns>
+    /// Retorna 204 indicando sucesso na atualização.
+    /// Em caso de erro, retorna 400.
+    /// </returns>
 
     [HttpPut("{id}")]
     public IActionResult Atualizar(Guid id, CursoDTO curso)
@@ -87,6 +119,12 @@ public class CursoController : ControllerBase
         }
     }
 
+    /// Remove um curso pelo ID.
+    /// </summary>
+    /// <param name="id">Identificador único do curso.</param>
+    /// <returns>
+    /// Retorna 204 se removido com sucesso. Em caso de erro, retorna 400.
+    /// </returns>
     [HttpDelete("{id}")]
     public IActionResult Deletar(Guid id)
     {

@@ -17,7 +17,12 @@ public class AlunoController : ControllerBase
     {
         _AlunoRepository = alunoRepository;
     }
-
+    /// <summary>
+    /// Lista todos os alunos cadastrados.
+    /// </summary>
+    /// <returns>
+    /// Retorna a lista de alunos. Em caso de erro, retorna status 400 com a mensagem de erro.
+    /// </returns>
     [HttpGet]
     public IActionResult Listar()
     {
@@ -31,6 +36,13 @@ public class AlunoController : ControllerBase
         }
     }
 
+    /// <summary>
+    /// Cadastra um novo aluno.
+    /// </summary>
+    /// <param name="aluno">Objeto contendo os dados do aluno, incluindo nome, contato, matrícula e foto.</param>
+    /// <returns>
+    /// Retorna o aluno cadastrado.
+    /// </returns>
     [HttpPost]
     public IActionResult Cadastrar([FromForm] AlunoDTO aluno)
     {
@@ -74,6 +86,16 @@ public class AlunoController : ControllerBase
         }
     }
 
+    /// <summary>
+    /// Remove um aluno pelo ID.
+    /// </summary>
+    /// <param name="id">Identificador único do aluno.</param>
+    /// <returns>
+    /// Retorna 204 se removido com sucesso.
+    /// Retorna 404 se o aluno não for encontrado.
+    /// Retorna 400 em caso de erro.
+    /// </returns>
+
     [HttpDelete("{id}")]
     public IActionResult Deletar(Guid id )
     {
@@ -104,6 +126,16 @@ public class AlunoController : ControllerBase
         }
     }
 
+    /// <summary>
+    /// Atualiza os dados de um aluno existente.
+    /// </summary>
+    /// <param name="id">Identificador do aluno.</param>
+    /// <param name="aluno">Objeto com os novos dados do aluno.</param>
+    /// <returns>
+    /// Retorna 200 com o aluno atualizado.
+    /// Retorna 404 se o aluno não for encontrado.
+    /// Retorna 400 em caso de erro.
+    /// </returns>
     [HttpPut("{id}")]
     public async Task<IActionResult> Atualizar(Guid id, [FromForm] AlunoDTO aluno)
     {
@@ -150,6 +182,14 @@ public class AlunoController : ControllerBase
         }
     }
 
+    /// <summary>
+    /// Busca um aluno pelo ID.
+    /// </summary>
+    /// <param name="id">Identificador único do aluno.</param>
+    /// <returns>
+    /// Retorna 200 com o aluno encontrado.
+    /// Retorna 400 em caso de erro.
+    /// </returns>
     [HttpGet("{id}")]
     public IActionResult BuscarPorId(Guid id)
     {
