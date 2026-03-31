@@ -1,15 +1,17 @@
-﻿using EvoluirEducação.Interfaces;
+﻿using EvoluirEducação.BdContextEvoluir;
+using EvoluirEducação.Interfaces;
+using EvoluirEducação.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace EvoluirEducação.Repositories
 {
     public class AlunoRepository : IAlunoRepository
     {
-        private readonly EvoluirEducaçãoContext _Context;
+        private readonly EvoluirContext _context;
 
-        public AlunoRepository(EvoluirEducaçãoContext context)
+        public AlunoRepository(EvoluirContext context)
         {
-            _Context = context;
+            _context = context;
         }
         public void Atualizar(Guid id, Aluno aluno)
         {
@@ -17,13 +19,13 @@ namespace EvoluirEducação.Repositories
 
             if (alunoBuscado != null)
             {
-                alunoBuscado.Contato = String.IsNullOrWhiteSpace(aluno.Contato) ? alunoBuscado.Contato :aluno.FormaContato;
+                alunoBuscado.Contato = aluno.Contato;
                 alunoBuscado.Foto = String.IsNullOrWhiteSpace(aluno.Foto) ? alunoBuscado.Foto : aluno.Foto;
                 alunoBuscado.Nome = String.IsNullOrWhiteSpace(aluno.Nome) ? alunoBuscado.Nome : aluno.Nome;
                 alunoBuscado.Matricula = String.IsNullOrWhiteSpace(aluno.Matricula) ? alunoBuscado.Matricula : aluno.Matricula;
 
 
-                _context.Contatos.Update(alunoBuscado);
+                _context.Alunos.Update(alunoBuscado);
                 _context.SaveChanges();
 
             }
@@ -40,7 +42,7 @@ namespace EvoluirEducação.Repositories
             _context.SaveChanges();
         }
 
-        public void Deletar(Guid IdAluno)
+        public void Deletar(Aluno IdAluno)
         {
             Aluno AlunoBuscado = _context.Alunos.Find(IdAluno.ToString())!;
             if (AlunoBuscado != null)

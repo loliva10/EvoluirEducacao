@@ -1,4 +1,6 @@
-﻿namespace EvoluirEducação.Interfaces;
+﻿using EvoluirEducação.Models;
+
+namespace EvoluirEducação.Interfaces;
 
 public interface ICursoRepository
 {
@@ -6,7 +8,7 @@ public interface ICursoRepository
 
     void Cadastrar(Curso curso);
 
-    void Deletar(Guid idCurso);
+    void Deletar(Curso idCurso);
 
     void Atualizar(Guid id, Curso curso);
 

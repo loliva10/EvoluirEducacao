@@ -1,165 +1,165 @@
 ﻿using EvoluirEducação.DTO;
 using EvoluirEducação.Interfaces;
+using EvoluirEducação.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace EvoluirEducação.Controllers
+namespace EvoluirEducação.Controllers;
+
+[Route("api/[controller]")]
+[ApiController]
+public class AlunoController : ControllerBase
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class AlunoController : ControllerBase
+
+    private readonly IAlunoRepository _AlunoRepository;
+
+    public AlunoController(IAlunoRepository alunoRepository)
     {
+        _AlunoRepository = alunoRepository;
+    }
 
-        private readonly IAlunoRepository _AlunoRepository;
-
-        public AlunoController(IAlunoRepository alunoRepository)
+    [HttpGet]
+    public IActionResult Listar()
+    {
+        try
         {
-            _AlunoRepository = alunoRepository;
+            return Ok(_AlunoRepository.Listar());
         }
-
-        [HttpGet]
-        public IActionResult Listar()
+        catch (Exception erro)
         {
-            try
-            {
-                return Ok(_AlunoRepository.Listar());
-            }
-            catch (Exception erro)
-            {
-                return BadRequest(erro.Message);
-            }
+            return BadRequest(erro.Message);
         }
+    }
 
-        [HttpPost]
-        public IActionResult Cadastrar([FromForm] AlunoDTO aluno)
+    [HttpPost]
+    public IActionResult Cadastrar([FromForm] AlunoDTO aluno)
+    {
+        if (String.IsNullOrEmpty(aluno.Nome))
         {
-            if (String.IsNullOrEmpty(aluno.Nome) || String.IsNullOrEmpty(aluno.Contato))
-            {
-                return BadRequest("O nome, matricula e a forma de contato são obrigatórios");
-            }
-            Aluno novoAluno = new Aluno();
-            if (aluno.Foto != null && aluno.Foto.Length > 0)
-            {
-                var extensao = Path.GetExtension(aluno.Foto.FileName);
-                var nomeArquivo = $"{Guid.NewGuid()}{extensao}";
-
-                var pastaRelativa = "wwwroot/imagens";
-                var caminhoPasta = Path.Combine(Directory.GetCurrentDirectory(), pastaRelativa);
-
-                if (!Directory.Exists(caminhoPasta))
-                {
-                    Directory.CreateDirectory(caminhoPasta);
-                }
-
-                var caminhoCompleto = Path.Combine(caminhoPasta, nomeArquivo);
-                using (var stream = new FileStream(caminhoCompleto, FileMode.Create))
-                {
-                    aluno.Foto.CopyToAsync(stream);
-                }
-
-                novoAluno.Imagem = nomeArquivo;
-            }
-            novoAluno.Nome = aluno.Nome;
-            novoAluno.Contato = aluno.Contato;
-            novoAluno.Matricula = aluno.Matricula;
-            try
-            {
-                _AlunoRepository.Cadastrar(novoAluno);
-                return Ok(novoAluno);
-            }
-            catch (Exception erro)
-            {
-                return BadRequest(erro.Message);
-            }
+            return BadRequest("O nome obrigatórios");
         }
-
-        [HttpDelete("{id}")]
-        public IActionResult Deletar(Guid id)
+        Aluno novoAluno = new Aluno();
+        if (aluno.Foto != null && aluno.Foto.Length > 0)
         {
-            var AlunoBuscado = _AlunoRepository.BuscarPorId(id);
-            if (AlunoBuscado == null)
-            {
-                return NotFound("Contato não encontrado");
-            }
-            var PastaRelativa = "wwwroot/imagens";
-            var caminhoPasta = Path.Combine(Directory.GetCurrentDirectory(), PastaRelativa);
+            var extensao = Path.GetExtension(aluno.Foto.FileName);
+            var nomeArquivo = $"{Guid.NewGuid()}{extensao}";
 
-            if (!string.IsNullOrEmpty(AlunoBuscado.Foto))
+            var pastaRelativa = "wwwroot/imagens";
+            var caminhoPasta = Path.Combine(Directory.GetCurrentDirectory(), pastaRelativa);
+
+            if (!Directory.Exists(caminhoPasta))
             {
-                var caminho = Path.Combine(caminhoPasta, AlunoBuscado.Foto);
-                if (System.IO.File.Exists(caminho))
-                {
-                    System.IO.File.Delete(caminho);
-                }
+                Directory.CreateDirectory(caminhoPasta);
             }
-            try
+
+            var caminhoCompleto = Path.Combine(caminhoPasta, nomeArquivo);
+            using (var stream = new FileStream(caminhoCompleto, FileMode.Create))
             {
-                _AlunoRepository.Deletar(id);
-                return NoContent();
+                aluno.Foto.CopyToAsync(stream);
             }
-            catch (Exception erro)
+
+            novoAluno.Foto = nomeArquivo;
+        }
+        novoAluno.Nome = aluno.Nome;
+        novoAluno.Contato = aluno.Contato;
+        novoAluno.Matricula = aluno.Matricula!;
+        try
+        {
+            _AlunoRepository.Cadastrar(novoAluno);
+            return Ok(novoAluno);
+        }
+        catch (Exception erro)
+        {
+            return BadRequest(erro.Message);
+        }
+    }
+
+    [HttpDelete("{id}")]
+    public IActionResult Deletar(Guid id )
+    {
+        var AlunoBuscado = _AlunoRepository.BuscarPorId(id);
+        if (AlunoBuscado == null)
+        {
+            return NotFound("Contato não encontrado");
+        }
+        var PastaRelativa = "wwwroot/imagens";
+        var caminhoPasta = Path.Combine(Directory.GetCurrentDirectory(), PastaRelativa);
+
+        if (!string.IsNullOrEmpty(AlunoBuscado.Foto))
+        {
+            var caminho = Path.Combine(caminhoPasta, AlunoBuscado.Foto);
+            if (System.IO.File.Exists(caminho))
             {
-                return BadRequest(erro.Message);
+                System.IO.File.Delete(caminho);
             }
         }
-
-        [HttpPut("{id}")]
-        public async Task<IActionResult> Atualizar(Guid id, [FromForm] AlunoDTO aluno)
+        try
         {
-            var alunoBuscado = _AlunoRepository.BuscarPorId(id);
-            if (alunoBuscado == null)
-            {
-                return NotFound("aluno não encontrado");
-            }
-            if (aluno.Foto != null && aluno.Foto.Length > 0)
-            {
-                var pastaRelativa = "wwwroot/imagens";
-                var caminhoPasta = Path.Combine(Directory.GetCurrentDirectory(), pastaRelativa);
-                if (!String.IsNullOrEmpty(alunoBuscado.Imagem))
-                {
-                    var caminhoAntigo = Path.Combine(caminhoPasta, alunoBuscado.Imagem);
-                    if (System.IO.File.Exists(caminhoAntigo))
-                    {
-                        System.IO.File.Delete(caminhoAntigo);
-                    }
-                }
-
-                var extensao = Path.GetExtension(aluno.Foto.FileName);
-                var nomeArquivo = $"{Guid.NewGuid()}{extensao}";
-
-                if (!Directory.Exists(caminhoPasta))
-                {
-                    Directory.CreateDirectory(caminhoPasta);
-                }
-                var caminhoCompleto = Path.Combine(caminhoPasta, nomeArquivo);
-                using (var stream = new FileStream(caminhoCompleto, FileMode.Create))
-                {
-                    await aluno.Foto.CopyToAsync(stream);
-                }
-                alunoBuscado.Foto = nomeArquivo;
-            }
-            try
-            {
-                _AlunoRepository.Atualizar(id, alunoBuscado);
-                return Ok(alunoBuscado);
-            }
-            catch (Exception erro)
-            {
-                return BadRequest(erro.Message);
-            }
+            _AlunoRepository.Deletar(AlunoBuscado);
+            return NoContent();
         }
-
-        [HttpGet("{id}")]
-        public IActionResult BuscarPorId(Guid id)
+        catch (Exception erro)
         {
-            try
+            return BadRequest(erro.Message);
+        }
+    }
+
+    [HttpPut("{id}")]
+    public async Task<IActionResult> Atualizar(Guid id, [FromForm] AlunoDTO aluno)
+    {
+        var alunoBuscado = _AlunoRepository.BuscarPorId(id);
+        if (alunoBuscado == null)
+        {
+            return NotFound("aluno não encontrado");
+        }
+        if (aluno.Foto != null && aluno.Foto.Length > 0)
+        {
+            var pastaRelativa = "wwwroot/imagens";
+            var caminhoPasta = Path.Combine(Directory.GetCurrentDirectory(), pastaRelativa);
+            if (!String.IsNullOrEmpty(alunoBuscado.Foto))
             {
-                return Ok(_AlunoRepository.BuscarPorId(id));
+                var caminhoAntigo = Path.Combine(caminhoPasta, alunoBuscado.Foto);
+                if (System.IO.File.Exists(caminhoAntigo))
+                {
+                    System.IO.File.Delete(caminhoAntigo);
+                }
             }
-            catch (Exception erro)
+
+            var extensao = Path.GetExtension(aluno.Foto.FileName);
+            var nomeArquivo = $"{Guid.NewGuid()}{extensao}";
+
+            if (!Directory.Exists(caminhoPasta))
             {
-                return BadRequest(erro.Message);
+                Directory.CreateDirectory(caminhoPasta);
             }
+            var caminhoCompleto = Path.Combine(caminhoPasta, nomeArquivo);
+            using (var stream = new FileStream(caminhoCompleto, FileMode.Create))
+            {
+                await aluno.Foto.CopyToAsync(stream);
+            }
+            alunoBuscado.Foto = nomeArquivo;
+        }
+        try
+        {
+            _AlunoRepository.Atualizar(id, alunoBuscado);
+            return Ok(alunoBuscado);
+        }
+        catch (Exception erro)
+        {
+            return BadRequest(erro.Message);
+        }
+    }
+
+    [HttpGet("{id}")]
+    public IActionResult BuscarPorId(Guid id)
+    {
+        try
+        {
+            return Ok(_AlunoRepository.BuscarPorId(id));
+        }
+        catch (Exception erro)
+        {
+            return BadRequest(erro.Message);
         }
     }
 }

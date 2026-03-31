@@ -1,13 +1,13 @@
 
+using EvoluirEducação.BdContextEvoluir;
 using EvoluirEducação.Interfaces;
 using EvoluirEducação.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContext< nome da api >(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<EvoluirContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddControllers();
-builder.Services.AddOpenApi();
 builder.Services.AddScoped<IAlunoRepository, AlunoRepository>();
 builder.Services.AddScoped<ITurmaRepository, TurmaRepository>();
 builder.Services.AddScoped<ICursoRepository, CursoRepository>();
@@ -37,12 +37,11 @@ builder.Services.AddSwaggerGen(options =>
         }
     });
 });
-builder.Services.AddOpenApi();
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
     app.UseSwagger(options => { });
     app.UseSwaggerUI(options =>
     {

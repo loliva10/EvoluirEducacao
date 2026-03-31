@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEducação\\EvoluirEducação.csproj": {}
+    "C:\\Users\\41932003886\\Desktop\\EvoluirEducacao\\EvoluirEducaçãoAPi\\EvoluirEducação.csproj": {}
   },
   "projects": {
-    "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEducação\\EvoluirEducação.csproj": {
+    "C:\\Users\\41932003886\\Desktop\\EvoluirEducacao\\EvoluirEducaçãoAPi\\EvoluirEducação.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEducação\\EvoluirEducação.csproj",
+        "projectUniqueName": "C:\\Users\\41932003886\\Desktop\\EvoluirEducacao\\EvoluirEducaçãoAPi\\EvoluirEducação.csproj",
         "projectName": "EvoluirEducação",
-        "projectPath": "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEducação\\EvoluirEducação.csproj",
+        "projectPath": "C:\\Users\\41932003886\\Desktop\\EvoluirEducacao\\EvoluirEducaçãoAPi\\EvoluirEducação.csproj",
         "packagesPath": "C:\\Users\\41932003886\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\41932003886\\Desktop\\Back-end-S3\\EvoluirEducação\\obj\\",
+        "outputPath": "C:\\Users\\41932003886\\Desktop\\EvoluirEducacao\\EvoluirEducaçãoAPi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -58,7 +58,7 @@
               "target": "Package",
               "version": "[10.0.5, )"
             },
-            "Microsoft.AspNetCore.OpenApi": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[10.0.5, )"
             },
@@ -76,17 +76,25 @@
               "target": "Package",
               "version": "[10.0.5, )"
             },
-            "Swashbuckle.AspNetCore.Swagger": {
+            "Microsoft.OpenApi": {
+              "target": "Package",
+              "version": "[3.5.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[10.1.7, )"
             },
-            "Swashbuckle.AspNetCore.SwaggerGen": {
+            "Swashbuckle.AspNetCore.Swagger": {
               "target": "Package",
               "version": "[10.1.7, )"
             },
             "Swashbuckle.AspNetCore.SwaggerUI": {
               "target": "Package",
               "version": "[10.1.7, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.17.0, )"
             }
           },
           "imports": [

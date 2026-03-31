@@ -1,4 +1,6 @@
-﻿using EvoluirEducação.Interfaces;
+﻿using EvoluirEducação.BdContextEvoluir;
+using EvoluirEducação.Interfaces;
+using EvoluirEducação.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace EvoluirEducação.Repositories
@@ -6,11 +8,11 @@ namespace EvoluirEducação.Repositories
     public class TurmaRepository : ITurmaRepository
     {
 
-        private readonly EvoluirEducaçãoContext _Context;
+        private readonly EvoluirContext _context;
 
-        public TurmaRepository(EvoluirEducaçãoContext context)
+        public TurmaRepository(EvoluirContext context)
         {
-            _Context = context;
+            _context = context;
         }
 
         public void Atualizar(Guid id, Turma turma)
@@ -20,8 +22,7 @@ namespace EvoluirEducação.Repositories
             if (turmaBuscado != null)
             {
                 turmaBuscado.Turno = String.IsNullOrWhiteSpace(turma.Turno) ? turmaBuscado.Turno : turma.Turno;
-                turmaBuscado.Periodo = String.IsNullOrWhiteSpace(turma.Periodo) ? turmaBuscado.Periodo : turma.Periodo;
-                turmaBuscado.Capacidade = String.IsNullOrWhiteSpace(turma.Capacidade) ? turmaBuscado.Capacidade : turma.Capacidade;
+                turmaBuscado.Capacidade = turma.Capacidade;
                 turmaBuscado.Nome = String.IsNullOrWhiteSpace(turma.Nome) ? turmaBuscado.Nome : turma.Nome;
 
 
@@ -30,15 +31,16 @@ namespace EvoluirEducação.Repositories
                 _context.SaveChanges();
 
             }
+        }
 
         public Turma BuscarPorId(Guid id)
         {
             return _context.Turmas.Find(id)!;
         }
 
-        public void Cadastrar(Turma Turma)
+        public void Cadastrar(Turma turma)
         {
-            _context.Turmas.Add(contato);
+            _context.Turmas.Add(turma);
             _context.SaveChanges();
         }
 

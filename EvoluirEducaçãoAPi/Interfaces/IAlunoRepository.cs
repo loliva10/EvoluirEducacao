@@ -1,4 +1,6 @@
-﻿namespace EvoluirEducação.Interfaces;
+﻿using EvoluirEducação.Models;
+
+namespace EvoluirEducação.Interfaces;
 
 public interface IAlunoRepository
 {
@@ -6,7 +8,7 @@ public interface IAlunoRepository
 
     void Cadastrar(Aluno aluno);
 
-    void Deletar(Guid IdAluno);
+    void Deletar(Aluno IdAluno);
 
     void Atualizar(Guid id, Aluno aluno);
 

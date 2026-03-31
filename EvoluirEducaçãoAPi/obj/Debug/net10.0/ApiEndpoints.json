@@ -1,0 +1,274 @@
+[
+  {
+    "ContainingType": "EvoluirEduca\u00E7\u00E3o.Controllers.AlunoController",
+    "Method": "Listar",
+    "RelativePath": "api/Aluno",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EvoluirEduca\u00E7\u00E3o.Controllers.AlunoController",
+    "Method": "Cadastrar",
+    "RelativePath": "api/Aluno",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Nome",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Matricula",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Foto",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "Contato",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EvoluirEduca\u00E7\u00E3o.Controllers.AlunoController",
+    "Method": "Deletar",
+    "RelativePath": "api/Aluno/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EvoluirEduca\u00E7\u00E3o.Controllers.AlunoController",
+    "Method": "Atualizar",
+    "RelativePath": "api/Aluno/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "Nome",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Matricula",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Foto",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "Contato",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EvoluirEduca\u00E7\u00E3o.Controllers.AlunoController",
+    "Method": "BuscarPorId",
+    "RelativePath": "api/Aluno/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EvoluirEduca\u00E7\u00E3o.Controllers.CursoController",
+    "Method": "Listar",
+    "RelativePath": "api/Curso",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EvoluirEduca\u00E7\u00E3o.Controllers.CursoController",
+    "Method": "Cadastrar",
+    "RelativePath": "api/Curso",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "curso",
+        "Type": "EvoluirEduca\u00E7\u00E3o.DTO.CursoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EvoluirEduca\u00E7\u00E3o.Controllers.CursoController",
+    "Method": "BuscarPorId",
+    "RelativePath": "api/Curso/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EvoluirEduca\u00E7\u00E3o.Controllers.CursoController",
+    "Method": "Atualizar",
+    "RelativePath": "api/Curso/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "curso",
+        "Type": "EvoluirEduca\u00E7\u00E3o.DTO.CursoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EvoluirEduca\u00E7\u00E3o.Controllers.CursoController",
+    "Method": "Deletar",
+    "RelativePath": "api/Curso/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "EvoluirEduca\u00E7\u00E3o.Models.Curso",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EvoluirEduca\u00E7\u00E3o.Controllers.TurmaController",
+    "Method": "Listar",
+    "RelativePath": "api/Turma",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EvoluirEduca\u00E7\u00E3o.Controllers.TurmaController",
+    "Method": "Cadastrar",
+    "RelativePath": "api/Turma",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "turma",
+        "Type": "EvoluirEduca\u00E7\u00E3o.DTO.TurmaDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EvoluirEduca\u00E7\u00E3o.Controllers.TurmaController",
+    "Method": "BuscarPorId",
+    "RelativePath": "api/Turma/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EvoluirEduca\u00E7\u00E3o.Controllers.TurmaController",
+    "Method": "Atualizar",
+    "RelativePath": "api/Turma/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "turma",
+        "Type": "EvoluirEduca\u00E7\u00E3o.DTO.TurmaDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EvoluirEduca\u00E7\u00E3o.Controllers.TurmaController",
+    "Method": "Deletar",
+    "RelativePath": "api/Turma/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

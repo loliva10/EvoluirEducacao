@@ -1,4 +1,6 @@
-﻿using EvoluirEducação.Interfaces;
+﻿using EvoluirEducação.BdContextEvoluir;
+using EvoluirEducação.Interfaces;
+using EvoluirEducação.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace EvoluirEducação.Repositories
@@ -6,11 +8,11 @@ namespace EvoluirEducação.Repositories
     public class CursoRepository : ICursoRepository
     {
 
-        private readonly EvoluirEducaçãoContext _Context;
+        private readonly EvoluirContext _context;
 
-        public CursoRepository(EvoluirEducaçãoContext context)
+        public CursoRepository(EvoluirContext context)
         {
-            _Context = context;
+            _context = context;
         }
         public void Atualizar(Guid id, Curso curso)
         {
@@ -18,11 +20,11 @@ namespace EvoluirEducação.Repositories
 
             if (CursoBuscado != null)
             {
-                CursoBuscado.Duracao = String.IsNullOrWhiteSpace(curso.Duracao) ? CursoBuscado.Duracao : curso.Duracao;
-                CursoBuscado.CargaHoraria = String.IsNullOrWhiteSpace(curso.CargaHoraria) ? CursoBuscado.CargaHoraria : curso.CargaHoraria;
+                CursoBuscado.Duracao = curso.Duracao;
+                CursoBuscado.CargaHoraria = curso.CargaHoraria;
                 CursoBuscado.Nome = String.IsNullOrWhiteSpace(curso.Nome) ? CursoBuscado.Nome : curso.Nome;
 
-                _context.Contatos.Update(CursoBuscado);
+                _context.Cursos.Update(CursoBuscado);
                 _context.SaveChanges();
 
             }
@@ -35,17 +37,14 @@ namespace EvoluirEducação.Repositories
 
         public void Cadastrar(Curso curso)
         {
-            _context.Alunos.Add(curso);
+            _context.Cursos.Add(curso);
             _context.SaveChanges();
         }
 
-        public void Deletar(Guid idCurso)
+        public void Deletar(Curso idCurso)
         {
-            Curso cursoBuscado = _context.Alunos.Find(idCurso.ToString())!;
-            if (cursoBuscado != null)
-            {
-                _context.Cursos.Remove(cursoBuscado);
-            }
+
+            _context.Cursos.Remove(idCurso);
             _context.SaveChanges();
 
         }

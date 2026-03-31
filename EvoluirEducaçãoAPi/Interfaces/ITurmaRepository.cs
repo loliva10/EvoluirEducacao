@@ -1,4 +1,6 @@
-﻿namespace EvoluirEducação.Interfaces;
+﻿using EvoluirEducação.Models;
+
+namespace EvoluirEducação.Interfaces;
 
 public interface ITurmaRepository
 {

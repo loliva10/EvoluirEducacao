@@ -15,6 +15,6 @@ namespace EvoluirEducação.DTO
         public IFormFile? Foto { get; set; }
 
         [Required(ErrorMessage = "O contato do Aluno é obrigatorio")]
-        public string? Contato { get; set; }
+        public int Contato { get; set; }
     }
 }
