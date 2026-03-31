@@ -75,6 +75,7 @@ public class AlunoController : ControllerBase
         novoAluno.Nome = aluno.Nome;
         novoAluno.Contato = aluno.Contato;
         novoAluno.Matricula = aluno.Matricula!;
+        novoAluno.IdTurma = aluno.idTurma;
         try
         {
             _AlunoRepository.Cadastrar(novoAluno);

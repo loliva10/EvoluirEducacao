@@ -42,7 +42,7 @@ namespace EvoluirEducação.Repositories
         /// Busca um aluno pelo seu ID.
         /// </summary>
         /// <param name="id">ID do aluno a ser buscado.</param>
-        /// <returns>O <see cref="Aluno"/> correspondente ao ID informado.</returns>
+        /// <returns>O correspondente ao ID informado.</returns>
 
         public Aluno BuscarPorId(Guid id)
         {
@@ -52,7 +52,7 @@ namespace EvoluirEducação.Repositories
         /// <summary>
         /// Cadastra um novo aluno no banco de dados.
         /// </summary>
-        /// <param name="aluno">Objeto <see cref="Aluno"/> a ser adicionado.</param>
+        /// <param name="aluno">Objeto a ser adicionado.</param>
         public void Cadastrar(Aluno aluno)
         {
             _context.Alunos.Add(aluno);
@@ -62,7 +62,7 @@ namespace EvoluirEducação.Repositories
         /// <summary>
         /// Remove um aluno do banco de dados.
         /// </summary>
-        /// <param name="aluno">Objeto <see cref="Aluno"/> a ser removido.</param>
+        /// <param name="aluno">Objeto a ser removido.</param>
 
         public void Deletar(Aluno aluno)
         {
@@ -76,7 +76,7 @@ namespace EvoluirEducação.Repositories
         /// <summary>
         /// Retorna todos os alunos cadastrados, ordenados pelo nome.
         /// </summary>
-        /// <returns>Lista de <see cref="Aluno"/> ordenada pelo nome.</returns>
+        /// <returns>Lista de ordenada pelo nome.</returns>
         public List<Aluno> Listar()
         {
             return _context.Alunos.OrderBy(con => con.Nome).ToList();

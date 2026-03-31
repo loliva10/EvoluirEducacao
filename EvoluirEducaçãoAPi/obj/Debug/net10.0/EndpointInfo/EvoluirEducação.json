@@ -5,8 +5,8 @@
     "description": "Aplicação para gerenciamento de contatos de alunos, turmas e cursos",
     "termsOfService": "https://example.com/terms",
     "contact": {
-      "name": "Eduardo Pereira, Luis Oliva, Matheus Felix, Natham Policarpo, James Ribeiro",
-      "url": "https://github.com/EduardoPereira30"
+      "name": "Eduardo Pereira, Luis Oliva, Matheus Felix, Natham Polino",
+      "url": "https://github.com/loliva10/EvoluirEducacao"
     },
     "license": {
       "name": "Example License",
@@ -37,6 +37,7 @@
                 "required": [
                   "Contato",
                   "Foto",
+                  "idTurma",
                   "Matricula",
                   "Nome"
                 ],
@@ -52,6 +53,14 @@
                     "type": "string",
                     "format": "binary"
                   },
+                  "idTurma": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "idCurso": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
                   "Contato": {
                     "type": "integer",
                     "format": "int32"
@@ -66,6 +75,12 @@
                   "style": "form"
                 },
                 "Foto": {
+                  "style": "form"
+                },
+                "idTurma": {
+                  "style": "form"
+                },
+                "idCurso": {
                   "style": "form"
                 },
                 "Contato": {
@@ -126,6 +141,7 @@
                 "required": [
                   "Contato",
                   "Foto",
+                  "idTurma",
                   "Matricula",
                   "Nome"
                 ],
@@ -141,6 +157,14 @@
                     "type": "string",
                     "format": "binary"
                   },
+                  "idTurma": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "idCurso": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
                   "Contato": {
                     "type": "integer",
                     "format": "int32"
@@ -155,6 +179,12 @@
                   "style": "form"
                 },
                 "Foto": {
+                  "style": "form"
+                },
+                "idTurma": {
+                  "style": "form"
+                },
+                "idCurso": {
                   "style": "form"
                 },
                 "Contato": {
@@ -492,6 +522,11 @@
           "nome": {
             "minLength": 1,
             "type": "string"
+          },
+          "idCurso": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
           }
         },
         "additionalProperties": false

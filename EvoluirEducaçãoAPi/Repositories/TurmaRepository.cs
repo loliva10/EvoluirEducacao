@@ -30,6 +30,7 @@ namespace EvoluirEducação.Repositories
                 turmaBuscado.Turno = String.IsNullOrWhiteSpace(turma.Turno) ? turmaBuscado.Turno : turma.Turno;
                 turmaBuscado.Capacidade = turma.Capacidade;
                 turmaBuscado.Nome = String.IsNullOrWhiteSpace(turma.Nome) ? turmaBuscado.Nome : turma.Nome;
+                turmaBuscado.IdCurso = turma.IdCurso;
 
 
 

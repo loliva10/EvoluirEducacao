@@ -163,3 +163,4 @@ C:\Users\41932003886\Desktop\EvoluirEducacao\EvoluirEducaçãoAPi\obj\Debug\net1
 C:\Users\41932003886\Desktop\EvoluirEducacao\EvoluirEducaçãoAPi\obj\Debug\net10.0\EvoluirEducação.pdb
 C:\Users\41932003886\Desktop\EvoluirEducacao\EvoluirEducaçãoAPi\obj\Debug\net10.0\EvoluirEducação.genruntimeconfig.cache
 C:\Users\41932003886\Desktop\EvoluirEducacao\EvoluirEducaçãoAPi\obj\Debug\net10.0\ref\EvoluirEducação.dll
+C:\Users\41932003886\Desktop\EvoluirEducacao\EvoluirEducaçãoAPi\bin\Debug\net10.0\EvoluirEducação.staticwebassets.runtime.json

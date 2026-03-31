@@ -13,6 +13,10 @@ namespace EvoluirEducação.DTO
 
         [Required(ErrorMessage = "A foto do Aluno é obrigatorio")]
         public IFormFile? Foto { get; set; }
+        [Required(ErrorMessage = "A foto do Aluno é obrigatorio")]
+        public Guid? idTurma { get; set; }
+
+        public Guid? idCurso { get; set; }
 
         [Required(ErrorMessage = "O contato do Aluno é obrigatorio")]
         public int Contato { get; set; }

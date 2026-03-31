@@ -13,5 +13,7 @@ namespace EvoluirEducação.DTO
         [Required(ErrorMessage = "O Nome da Turma é obrigatorio")]
         public string? Nome { get; set; }
 
+        public Guid? idCurso { get; set; }
+
     }
 }
