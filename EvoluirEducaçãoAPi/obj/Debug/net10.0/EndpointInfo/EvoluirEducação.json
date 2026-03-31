@@ -1,11 +1,11 @@
 {
   "openapi": "3.0.4",
   "info": {
-    "title": "API de Contatos",
-    "description": "Aplicação para gerenciamento de contatos",
+    "title": "API de Evoluir Educação ",
+    "description": "Aplicação para gerenciamento de contatos de alunos, turmas e cursos",
     "termsOfService": "https://example.com/terms",
     "contact": {
-      "name": "Eduardo Pereira",
+      "name": "Eduardo Pereira, Luis Oliva, Matheus Felix, Natham Policarpo, James Ribeiro",
       "url": "https://github.com/EduardoPereira30"
     },
     "license": {

@@ -22,13 +22,13 @@ builder.Services.AddSwaggerGen(options =>
     options.SwaggerDoc("v1", new OpenApiInfo
     {
         Version = "v1",
-        Title = "API de Contatos",
-        Description = "Aplicação para gerenciamento de contatos",
+        Title = "API de Evoluir Educação ",
+        Description = "Aplicação para gerenciamento de contatos de alunos, turmas e cursos",
         TermsOfService = new Uri("https://example.com/terms"),
         Contact = new OpenApiContact
         {
-            Name = "Eduardo Pereira", 
-            Url = new Uri("https://github.com/EduardoPereira30")
+            Name = "Eduardo Pereira, Luis Oliva, Matheus Felix, Natham Polino", 
+            Url = new Uri("https://github.com/loliva10/EvoluirEducacao")
         },
         License = new OpenApiLicense
         {

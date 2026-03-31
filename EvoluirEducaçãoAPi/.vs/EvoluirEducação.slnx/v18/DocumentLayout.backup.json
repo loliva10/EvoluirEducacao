@@ -50,8 +50,7 @@
               "RelativeToolTip": "Controllers\\CursoController.cs",
               "ViewState": "AgIAAFQAAAAAAAAAAAAowGEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T13:37:09.61Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-31T13:37:09.61Z"
             },
             {
               "$type": "Document",
@@ -63,8 +62,7 @@
               "RelativeToolTip": "Repositories\\TurmaRepository.cs",
               "ViewState": "AgIAACgAAAAAAAAAAAA5wDIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T13:35:45.562Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-31T13:35:45.562Z"
             },
             {
               "$type": "Document",
@@ -76,8 +74,7 @@
               "RelativeToolTip": "Repositories\\AlunoRepository.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAkwDEAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T13:34:47.534Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-31T13:34:47.534Z"
             },
             {
               "$type": "Document",
@@ -89,8 +86,7 @@
               "RelativeToolTip": "Migrations\\20260331131954_InitialCreate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T13:19:55.297Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-31T13:19:55.297Z"
             },
             {
               "$type": "Document",
@@ -98,12 +94,11 @@
               "Title": "EvoluirEduca\u00E7\u00E3o.csproj",
               "DocumentMoniker": "C:\\Users\\41932003886\\Desktop\\EvoluirEducacao\\EvoluirEduca\u00E7\u00E3oAPi\\EvoluirEduca\u00E7\u00E3o.csproj",
               "RelativeDocumentMoniker": "EvoluirEduca\u00E7\u00E3o.csproj",
-              "ToolTip": "C:\\Users\\41932003886\\Desktop\\EvoluirEducacao\\EvoluirEduca\u00E7\u00E3oAPi\\EvoluirEduca\u00E7\u00E3o.csproj*",
-              "RelativeToolTip": "EvoluirEduca\u00E7\u00E3o.csproj*",
+              "ToolTip": "C:\\Users\\41932003886\\Desktop\\EvoluirEducacao\\EvoluirEduca\u00E7\u00E3oAPi\\EvoluirEduca\u00E7\u00E3o.csproj",
+              "RelativeToolTip": "EvoluirEduca\u00E7\u00E3o.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-31T13:10:19.71Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-31T13:10:19.71Z"
             },
             {
               "$type": "Document",
@@ -111,9 +106,9 @@
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\41932003886\\Desktop\\EvoluirEducacao\\EvoluirEduca\u00E7\u00E3oAPi\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\41932003886\\Desktop\\EvoluirEducacao\\EvoluirEduca\u00E7\u00E3oAPi\\Program.cs*",
-              "RelativeToolTip": "Program.cs*",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAA+AAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\41932003886\\Desktop\\EvoluirEducacao\\EvoluirEduca\u00E7\u00E3oAPi\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB0AAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-31T13:07:56.869Z",
               "EditorCaption": ""
