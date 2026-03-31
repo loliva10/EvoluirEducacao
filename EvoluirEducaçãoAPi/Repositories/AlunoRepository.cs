@@ -42,13 +42,13 @@ namespace EvoluirEducação.Repositories
             _context.SaveChanges();
         }
 
-        public void Deletar(Aluno IdAluno)
+        public void Deletar(Aluno aluno)
         {
-            Aluno AlunoBuscado = _context.Alunos.Find(IdAluno.ToString())!;
-            if (AlunoBuscado != null)
-            {
-                _context.Alunos.Remove(IdAluno);
-            }
+           // Aluno AlunoBuscado = _context.Alunos.Find(IdAluno.ToString())!;
+            //if (AlunoBuscado != null)
+           // {
+            _context.Alunos.Remove(aluno);
+           // }
             _context.SaveChanges();
         }
 

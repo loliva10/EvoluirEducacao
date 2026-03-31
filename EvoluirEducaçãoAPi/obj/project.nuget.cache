@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "OybDL6MK7Js=",
+  "dgSpecHash": "gsOFr10Vt88=",
   "success": true,
   "projectFilePath": "C:\\Users\\41932003886\\Desktop\\EvoluirEducacao\\EvoluirEducaçãoAPi\\EvoluirEducação.csproj",
   "expectedPackageFiles": [
@@ -38,7 +38,7 @@
     "C:\\Users\\41932003886\\.nuget\\packages\\microsoft.identitymodel.protocols\\8.0.1\\microsoft.identitymodel.protocols.8.0.1.nupkg.sha512",
     "C:\\Users\\41932003886\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\8.0.1\\microsoft.identitymodel.protocols.openidconnect.8.0.1.nupkg.sha512",
     "C:\\Users\\41932003886\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.17.0\\microsoft.identitymodel.tokens.8.17.0.nupkg.sha512",
-    "C:\\Users\\41932003886\\.nuget\\packages\\microsoft.openapi\\3.5.0\\microsoft.openapi.3.5.0.nupkg.sha512",
+    "C:\\Users\\41932003886\\.nuget\\packages\\microsoft.openapi\\2.4.1\\microsoft.openapi.2.4.1.nupkg.sha512",
     "C:\\Users\\41932003886\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\41932003886\\.nuget\\packages\\microsoft.visualstudio.solutionpersistence\\1.0.52\\microsoft.visualstudio.solutionpersistence.1.0.52.nupkg.sha512",
     "C:\\Users\\41932003886\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",

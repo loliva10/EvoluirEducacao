@@ -181,12 +181,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "EvoluirEduca\u00E7\u00E3o.Models.Curso",
-        "IsRequired": true
-      },
-      {
-        "Name": "id",
-        "Type": "",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],

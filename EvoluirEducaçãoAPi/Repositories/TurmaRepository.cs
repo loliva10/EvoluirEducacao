@@ -46,7 +46,7 @@ namespace EvoluirEducação.Repositories
 
         public void Deletar(Guid idTurma)
         {
-            Turma turmaBuscado = _context.Turmas.Find(idTurma.ToString())!;
+            Turma turmaBuscado = _context.Turmas.Find(idTurma)!;
             if (turmaBuscado != null)
             {
                 _context.Turmas.Remove(turmaBuscado);

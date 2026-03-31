@@ -14,7 +14,6 @@
           "Microsoft.EntityFrameworkCore": "10.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "10.0.5",
           "Microsoft.EntityFrameworkCore.Tools": "10.0.5",
-          "Microsoft.OpenApi": "3.5.0",
           "Swashbuckle.AspNetCore": "10.1.7",
           "Swashbuckle.AspNetCore.Swagger": "10.1.7",
           "Swashbuckle.AspNetCore.SwaggerUI": "10.1.7",
@@ -637,11 +636,11 @@
           }
         }
       },
-      "Microsoft.OpenApi/3.5.0": {
+      "Microsoft.OpenApi/2.4.1": {
         "runtime": {
           "lib/net8.0/Microsoft.OpenApi.dll": {
-            "assemblyVersion": "3.5.0.0",
-            "fileVersion": "3.5.0.0"
+            "assemblyVersion": "2.4.1.0",
+            "fileVersion": "2.4.1.0"
           }
         }
       },
@@ -689,7 +688,7 @@
       },
       "Swashbuckle.AspNetCore.Swagger/10.1.7": {
         "dependencies": {
-          "Microsoft.OpenApi": "3.5.0"
+          "Microsoft.OpenApi": "2.4.1"
         },
         "runtime": {
           "lib/net10.0/Swashbuckle.AspNetCore.Swagger.dll": {
@@ -1060,12 +1059,12 @@
       "path": "microsoft.identitymodel.tokens/8.17.0",
       "hashPath": "microsoft.identitymodel.tokens.8.17.0.nupkg.sha512"
     },
-    "Microsoft.OpenApi/3.5.0": {
+    "Microsoft.OpenApi/2.4.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-td+/lsg+Y+XH51laKjSWIK9V8UDmh0v0oc3/+SiHgt4ZnfChnvYaLkFW4tDTTiD8oQLgw5b0Jvvyzd71hWbOOw==",
-      "path": "microsoft.openapi/3.5.0",
-      "hashPath": "microsoft.openapi.3.5.0.nupkg.sha512"
+      "sha512": "sha512-u7QhXCISMQuab3flasb1hoaiERmUqyWsW7tmQODyILoQ7mJV5IRGM+2KKZYo0QUfC13evEOcHAb6TPWgqEQtrw==",
+      "path": "microsoft.openapi/2.4.1",
+      "hashPath": "microsoft.openapi.2.4.1.nupkg.sha512"
     },
     "Microsoft.SqlServer.Server/1.0.0": {
       "type": "package",

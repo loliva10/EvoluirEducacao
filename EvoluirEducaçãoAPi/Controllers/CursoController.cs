@@ -88,11 +88,12 @@ public class CursoController : ControllerBase
     }
 
     [HttpDelete("{id}")]
-    public IActionResult Deletar(Curso id)
+    public IActionResult Deletar(Guid id)
     {
         try
         {
-            _cursoRepository.Deletar(id);
+            var curso = _cursoRepository.BuscarPorId(id);
+            _cursoRepository.Deletar(curso);
             return StatusCode(204);
         }
         catch (Exception erro)
